@@ -5,25 +5,57 @@ link = ""
 description = ""
 created_at = 2020-09-19
 
+
 [[data]]
-name = ""
-tags = []
-link = ""
-description = ""
+name = "handlebars-rust"
+tags = ["crate"]
+link = "https://github.com/sunng87/handlebars-rust"
+description = "Handlebars templating language implemented in Rust and for Rust"
+created_at = 2020-09-19
+
+
+[[data]]
+name = "Visual Studio Code"
+tags = ["soft"]
+link = "https://code.visualstudio.com/"
+description = "It's a lightweight but powerful source code editor"
+created_at = 2020-09-19
+
+
+[[data]]
+name = "git"
+tags = ["soft"]
+link = "https://git-scm.com/"
+description = "Git is a distributed version-control system for tracking changes in source code during software development"
+created_at = 2020-09-19
+
+
+[[data]]
+name = "iTerm2"
+tags = ["soft"]
+link = "https://iterm2.com/"
+description = "It's a terminal emulator for macOS"
 created_at = 2020-09-19
 
 [[data]]
-name = ""
-tags = []
-link = ""
-description = ""
+name = "Docs.rs"
+tags = ["service", "rust"]
+link = "https://docs.rs"
+description = "Docs.rs is an open source documentation host for crates of the Rust Programming Language."
 created_at = 2020-09-19
 
 [[data]]
-name = ""
-tags = []
-link = ""
-description = ""
+name = "toml-rs"
+tags = ["crate"]
+link = "https://crates.io/crates/toml"
+description = "A TOML encoding/decoding library for Rust"
+created_at = 2020-09-19
+
+[[data]]
+name = "crates.io"
+tags = ["service", "rust"]
+link = "https://crates.io/"
+description = "The Rust community’s crate registry"
 created_at = 2020-09-19
 
 

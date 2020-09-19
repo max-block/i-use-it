@@ -1,7 +1,1 @@
-https://crates.io/
-https://github.com/alexcrichton/toml-rs
-https://docs.rs
-iTerm2
-git
-vscode
-https://github.com/sunng87/handlebars-rust
+
