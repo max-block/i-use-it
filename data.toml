@@ -5,6 +5,140 @@ link = ""
 description = ""
 created_at = 2020-09-19
 
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = ""
+tags = []
+link = ""
+description = ""
+created_at = 2020-09-19
+
+[[data]]
+name = "wrapt"
+tags = ["pypi"]
+link = "https://github.com/GrahamDumpleton/wrapt"
+description = "A Python module for decorators, wrappers and monkey patching"
+created_at = 2020-09-19
+
+[[data]]
+name = "pydash"
+tags = ["pypi"]
+link = "https://github.com/dgilland/pydash"
+description = """The kitchen sink of Python utility libraries for doing "stuff" in a functional way. Based on the Lo-Dash Javascript library."""
+created_at = 2020-09-19
+
+[[data]]
+name = "python-dotenv"
+tags = ["pypi"]
+link = "https://github.com/theskumar/python-dotenv"
+description = "Get and set values in your .env file in local and production servers"
+created_at = 2020-09-19
+
+[[data]]
+name = "PyMongo"
+tags = ["pypi"]
+link = "https://github.com/mongodb/mongo-python-driver"
+description = "PyMongo - the Python driver for MongoDB"
+created_at = 2020-09-19
+
+[[data]]
+name = "FastAPI"
+tags = ["pypi", "web"]
+link = "https://github.com/tiangolo/fastapi"
+description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
+created_at = 2020-09-19
+
+[[data]]
+name = "postgres"
+tags = ["crate"]
+link = "https://github.com/sfackler/rust-postgres"
+description = "PostgreSQL support for Rust."
+created_at = 2020-09-19
+
+
+[[data]]
+name = "libs.garden"
+tags = ["service"]
+link = "https://libs.garden/"
+description = "libraties and apps rating"
+created_at = 2020-09-19
+
+
+[[data]]
+name = "Docker"
+tags = ["devops"]
+link = "https://www.docker.com/"
+description = "Docker is an open platform for developing, shipping, and running applications"
+created_at = 2020-09-19
+
+[[data]]
+name = "Ansible"
+tags = ["devops"]
+link = "https://github.com/ansible/ansible"
+description = "Ansible is a radically simple IT automation system"
+created_at = 2020-09-19
+
+[[data]]
+name = "PostgreSQL"
+tags = ["database"]
+link = "https://www.postgresql.org/"
+description = "PostgreSQL is an object-relational database"
+created_at = 2020-09-19
+
+[[data]]
+name = "MongoDB"
+tags = ["database"]
+link = "https://github.com/mongodb/mongo"
+description = "MongoDB is a general purpose, document-based, distributed database"
+created_at = 2020-09-19
 
 [[data]]
 name = "handlebars-rust"

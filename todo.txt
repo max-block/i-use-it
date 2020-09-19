@@ -1,1 +1,10 @@
-
+pypi
+    requests
+    PySocks
+    uvicorn
+    gunicorn
+    pytest
+    pre-commit
+    PySnooper
+    wheel
+    twine

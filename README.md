@@ -4,6 +4,17 @@ I record all things which I use as a programmer: services, software, and librari
 buddies to more comfortable find topics for our Zoom conversations.
 
 ---
+ - [wrapt](https://github.com/GrahamDumpleton/wrapt) [#pypi] A Python module for decorators, wrappers and monkey patching
+ - [pydash](https://github.com/dgilland/pydash) [#pypi] The kitchen sink of Python utility libraries for doing &quot;stuff&quot; in a functional way. Based on the Lo-Dash Javascript library.
+ - [python-dotenv](https://github.com/theskumar/python-dotenv) [#pypi] Get and set values in your .env file in local and production servers
+ - [PyMongo](https://github.com/mongodb/mongo-python-driver) [#pypi] PyMongo - the Python driver for MongoDB
+ - [FastAPI](https://github.com/tiangolo/fastapi) [#pypi, #web] FastAPI framework, high performance, easy to learn, fast to code, ready for production
+ - [postgres](https://github.com/sfackler/rust-postgres) [#crate] PostgreSQL support for Rust.
+ - [libs.garden](https://libs.garden/) [#service] libraties and apps rating
+ - [Docker](https://www.docker.com/) [#devops] Docker is an open platform for developing, shipping, and running applications
+ - [Ansible](https://github.com/ansible/ansible) [#devops] Ansible is a radically simple IT automation system
+ - [PostgreSQL](https://www.postgresql.org/) [#database] PostgreSQL is an object-relational database
+ - [MongoDB](https://github.com/mongodb/mongo) [#database] MongoDB is a general purpose, document-based, distributed database
  - [handlebars-rust](https://github.com/sunng87/handlebars-rust) [#crate] Handlebars templating language implemented in Rust and for Rust
  - [Visual Studio Code](https://code.visualstudio.com/) [#soft] It&#x27;s a lightweight but powerful source code editor
  - [git](https://git-scm.com/) [#soft] Git is a distributed version-control system for tracking changes in source code during software development
