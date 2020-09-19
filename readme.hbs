@@ -1,8 +1,12 @@
 # I use it
 
-Hi! I record all things which I use as a programmer: services, software, and libraries. I do it for my programming
+I record all things which I use as a programmer: services, software, and libraries. I do it for my programming
 buddies to more comfortable find topics for our Zoom conversations.
 
+---
+{{#each data}}
+- [{{this.name}}]({{this.link}}) {{tags this.tags}}
 
-{{#each data}}- [{{this.name}}]({{this.link}}) {{this.tags}} - {{this.description}}
+    {{this.description}}
+---
 {{/each}}
