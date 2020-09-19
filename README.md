@@ -4,6 +4,16 @@ I record all things which I use as a programmer: services, software, and librari
 buddies to more comfortable find topics for our Zoom conversations.
 
 ---
+ - [twine](https://github.com/pypa/twine) [#pypi] Utilities for interacting with PyPI
+ - [wheel](https://github.com/pypa/wheel) [#pypi] The official binary distribution format for Python
+ - [PySnooper](https://github.com/cool-RR/PySnooper) [#pypi] Never use print for debugging again
+ - [pre-commit](https://github.com/pre-commit/pre-commit) [#pypi] A framework for managing and maintaining multi-language pre-commit hooks
+ - [pytest](https://github.com/pytest-dev/pytest) [#pypi] The pytest framework makes it easy to write small tests, yet scales to support complex functional testing
+ - [gunicorn](https://github.com/benoitc/gunicorn) [#pypi] gunicorn &#x27;Green Unicorn&#x27; is a WSGI HTTP Server for UNIX, fast clients and sleepy applications
+ - [uvicorn](https://github.com/encode/uvicorn) [#pypi] The lightning-fast ASGI server
+ - [PySocks](https://github.com/Anorov/PySocks) [#pypi] A SOCKS proxy client and wrapper for Python
+ - [requests](https://github.com/psf/requests) [#pypi] A simple, yet elegant HTTP library
+ - [cargo-expand](https://github.com/dtolnay/cargo-expand) [#cargo] Subcommand to show result of macro expansion
  - [wrapt](https://github.com/GrahamDumpleton/wrapt) [#pypi] A Python module for decorators, wrappers and monkey patching
  - [pydash](https://github.com/dgilland/pydash) [#pypi] The kitchen sink of Python utility libraries for doing &quot;stuff&quot; in a functional way. Based on the Lo-Dash Javascript library.
  - [python-dotenv](https://github.com/theskumar/python-dotenv) [#pypi] Get and set values in your .env file in local and production servers
