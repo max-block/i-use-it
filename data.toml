@@ -1,0 +1,14 @@
+[[data]]
+name = ""
+tags = ""
+link = "https://github.com/"
+description = ""
+created_at = 2020-09-19
+
+
+[[data]]
+name = "PyCharm"
+tags = ["soft", "python", "ide"]
+link = "https://www.jetbrains.com/pycharm/"
+description = "The Python IDE"
+created_at = 2020-09-19
