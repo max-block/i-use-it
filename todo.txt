@@ -1,4 +1,5 @@
-pypi:
-    twine
-
-crates:
+telegram
+discord
+firefox
+chrome
+grammarly

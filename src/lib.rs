@@ -26,19 +26,15 @@ pub struct Data {
 pub fn read_data() -> Vec<Data> {
     let data = fs::read_to_string("data.toml").unwrap();
     let res: DataRoot = toml::from_str(data.as_str()).unwrap();
-
-    // remove with empty name
     let mut data: Vec<_> = res.data.into_iter().filter(|d| !d.name.is_empty()).collect();
-    // data.sort_by(|a, b| b.cmp_by_created_at(&a));
     data.sort_by(|a, b| b.created_at.to_string().cmp(&a.created_at.to_string()));
-    return data;
+    data
 }
 
 pub fn generate_readme(data: Vec<Data>) {
-    handlebars_helper!(tags: |v: array| {
-    let d: Vec<String> = v.iter().map(|x|format!("#{}", x.as_str().unwrap())).collect();
-    d.join(", ")
-    });
+    handlebars_helper!(tags: |v: array|
+        v.iter().map(|x|format!("#{}", x.as_str().unwrap())).collect::<Vec<String>>().join(", ")
+    );
     let mut reg = Handlebars::new();
     reg.register_helper("tags", Box::new(tags));
     let template = fs::read_to_string("readme.hbs").unwrap();

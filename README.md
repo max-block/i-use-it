@@ -4,6 +4,17 @@ I record all things which I use as a programmer: services, software, and librari
 buddies to more comfortable find topics for our Zoom conversations.
 
 ---
+ - [tmux](https://github.com/tmux/tmux) [#soft] tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached.
+ - [tldr](https://github.com/tldr-pages/tldr) [#soft] A collection of community-maintained help pages for command-line tools
+ - [systemd](https://github.com/systemd/systemd) [#soft] The systemd System and Service Manager
+ - [Solidity](https://github.com/ethereum/solidity/) [#programming language] Solidity is a statically typed, contract-oriented, high-level language for implementing smart contracts on the Ethereum platform.
+ - [OpenEthereum](https://github.com/openethereum/openethereum) [#soft] Fast and feature-rich multi-network Ethereum client.
+ - [Midnight Commander](https://github.com/MidnightCommander/mc) [#soft] GNU Midnight Commander (also referred to as MC) is a user shell with text-mode full-screen interface.
+ - [Make](https://www.gnu.org/software/make/) [#soft] Make is a tool which controls the generation of executables and other non-source files of a program from the program&#x27;s source files.
+ - [Gitea](https://github.com/go-gitea/gitea) [#soft] Git with a cup of tea, painless self-hosted git service
+ - [geth](https://github.com/ethereum/go-ethereum) [#soft] Official Go implementation of the Ethereum protocol
+ - [Bash](https://github.com/bminor/bash) [#programming language] Bash is the GNU Project&#x27;s Bourne Again SHell, a complete implementation of the POSIX shell spec, but also with interactive command line editing, job control on architectures that support it, csh-like features such as history substitution and brace expansion, and a slew of other features.
+ - [aria2](https://github.com/aria2/aria2) [#soft] aria2 is a lightweight multi-protocol &amp; multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.
  - [twine](https://github.com/pypa/twine) [#pypi] Utilities for interacting with PyPI
  - [wheel](https://github.com/pypa/wheel) [#pypi] The official binary distribution format for Python
  - [PySnooper](https://github.com/cool-RR/PySnooper) [#pypi] Never use print for debugging again
