@@ -3,7 +3,8 @@ pub enum AppError {
     PyPISummaryError,
     IOError(std::io::Error),
     ReqwestError(reqwest::Error),
-    DeserializationError,
+    TomlDeError(toml::de::Error),
+    TomlSerError(toml::ser::Error),
 }
 
 impl From<std::io::Error> for AppError {
@@ -18,8 +19,14 @@ impl From<reqwest::Error> for AppError {
     }
 }
 
-// impl From<serde::de::Error> for AppError {
-//     fn from(_: serde::de::Error) -> Self {
-//         AppError::DeserializationError
-//     }
-// }
+impl From<toml::de::Error> for AppError {
+    fn from(e: toml::de::Error) -> Self {
+        AppError::TomlDeError(e)
+    }
+}
+
+impl From<toml::ser::Error> for AppError {
+    fn from(e: toml::ser::Error) -> Self {
+        AppError::TomlSerError(e)
+    }
+}

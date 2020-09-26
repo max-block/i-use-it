@@ -15,13 +15,11 @@ pub fn process() -> Result<Vec<Item>, AppError> {
 }
 
 fn process_pypi_description(packages: Vec<String>) -> Result<(), AppError> {
-    let descriptions_str = fs::read_to_string(PYPI_DESCRIPTION_PATH)?;
-    let exists_desc: HashMap<String, String> = toml::from_str(descriptions_str.as_str())?;
-
-    // let descriptions:HashMap<String, String> = toml::from_str(descriptions_str.as_str())?; 
+    let mut descriptions: HashMap<String, String> =
+        toml::from_str(fs::read_to_string(PYPI_DESCRIPTION_PATH)?.as_str())?;
 
     let packages_without_desription: Vec<String> =
-        packages.into_iter().filter(|x| !exists_desc.contains_key(x)).collect();
+        packages.into_iter().filter(|x| !descriptions.contains_key(x)).collect();
 
     let chunks: Vec<Vec<String>> = packages_without_desription
         .chunks(DESCRIPTION_WORKERS)
@@ -38,8 +36,14 @@ fn process_pypi_description(packages: Vec<String>) -> Result<(), AppError> {
         drop(tx); // It's important!
 
         let res: Vec<_> = rx.iter().collect();
-        println!("{:?}", res);
+        for r in res {
+            if let Ok(val) = r {
+                descriptions.insert(val.0, val.1);
+            }
+        }
     }
+    fs::write(PYPI_DESCRIPTION_PATH, toml::to_string(&descriptions)?)?;
+    println!("{:?}", descriptions);
 
     Ok(())
 }
@@ -62,7 +66,7 @@ fn process_pypi_list() -> Result<Vec<String>, AppError> {
     Ok(arr)
 }
 
-pub fn get_package_description(package: String) -> Result<String, AppError> {
+pub fn get_package_description(package: String) -> Result<(String, String), AppError> {
     let url = PYPI_API.replace("${package}", &package);
     let res = reqwest::blocking::get(&url)?.json::<Value>()?;
     let description = res
@@ -70,5 +74,5 @@ pub fn get_package_description(package: String) -> Result<String, AppError> {
         .ok_or(AppError::PyPISummaryError)?
         .as_str()
         .ok_or(AppError::PyPISummaryError)?;
-    Ok(description.to_string())
+    Ok((package, description.to_string()))
 }
