@@ -3,3 +3,11 @@ discord
 firefox
 chrome
 grammarly
+
+crate: chrono, serde, serde_json, mongodb, url
+
+
+
+
+https://christine.website/blog/TLDR-rust-2020-09-19
+https://youtu.be/Oy_VYovfWyo?list=PLlb7e2G7aSpTfhiECYNI2EZ1uAluUqE_e&t=3444
