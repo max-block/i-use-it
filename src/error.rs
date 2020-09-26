@@ -3,6 +3,7 @@ pub enum AppError {
     PyPISummaryError,
     IOError(std::io::Error),
     ReqwestError(reqwest::Error),
+    DeserializationError,
 }
 
 impl From<std::io::Error> for AppError {
@@ -16,3 +17,9 @@ impl From<reqwest::Error> for AppError {
         AppError::ReqwestError(e)
     }
 }
+
+// impl From<serde::de::Error> for AppError {
+//     fn from(_: serde::de::Error) -> Self {
+//         AppError::DeserializationError
+//     }
+// }

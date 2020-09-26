@@ -16,7 +16,9 @@ pub fn process() -> Result<Vec<Item>, AppError> {
 
 fn process_pypi_description(packages: Vec<String>) -> Result<(), AppError> {
     let descriptions_str = fs::read_to_string(PYPI_DESCRIPTION_PATH)?;
-    let exists_desc: HashMap<String, String> = toml::from_str(descriptions_str.as_str()).unwrap();
+    let exists_desc: HashMap<String, String> = toml::from_str(descriptions_str.as_str())?;
+
+    // let descriptions:HashMap<String, String> = toml::from_str(descriptions_str.as_str())?; 
 
     let packages_without_desription: Vec<String> =
         packages.into_iter().filter(|x| !exists_desc.contains_key(x)).collect();
