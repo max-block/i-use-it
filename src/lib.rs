@@ -1,14 +1,22 @@
-use processor::pypi;
-use serde::{Deserialize, Serialize};
-
 use std::collections::HashMap;
 use std::fs;
 
+use handlebars::Handlebars;
+use serde::{Deserialize, Serialize};
+use serde_json::json;
+
 use error::AppError;
+use processor::pypi;
 
 mod error;
 
 mod processor;
+
+#[derive(Serialize, Deserialize, Debug)]
+pub struct Items {
+    pub items: Vec<Item>,
+}
+
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Item {
     pub name: String,
@@ -23,6 +31,12 @@ pub struct Settings {
     links: HashMap<String, String>,
 }
 
+#[derive(Serialize, Deserialize, Debug)]
+pub struct Group {
+    title: String,
+    items: Vec<Item>,
+}
+
 impl Settings {
     fn from_file(path: &str) -> Result<Settings, std::io::Error> {
         let data = fs::read_to_string(path)?;
@@ -34,24 +48,25 @@ impl Settings {
 pub fn run() -> Result<(), AppError> {
     let settings = Settings::from_file("data/settings.toml")?;
 
+    let mut groups: Vec<Group> = vec![];
     for group_name in settings.groups {
-        let title = settings.titles.get(&group_name).unwrap();
-        dbg!(title);
+        let title = settings.titles.get(&group_name).unwrap().to_owned();
         let items = match group_name.as_str() {
             "pypi" => pypi::process(settings.links.get("pypi").unwrap()),
-            _ => processor::process_simple_group(&group_name)
+            _ => processor::process_simple_group(&group_name),
         }?;
-        dbg!(items);
-        println!("Zzz")
+        groups.push(Group { title, items })
     }
 
     // let pypi_items = pypi::process(settings.links.get("pypi").unwrap());
 
-    // let reg = Handlebars::new();
-    // let template = fs::read_to_string("readme.hbs").unwrap();
-    // // let data = json!({ "data": data });
-    // // let result = reg.render_template(template.as_str(), &data).unwrap();
-    // // println!("{}", result);
+    let reg = Handlebars::new();
+    let template = fs::read_to_string("readme.hbs").unwrap();
+
+    let result = reg
+        .render_template(template.as_str(), &json!({ "groups": groups }))
+        .unwrap();
+    println!("{}", result);
 
     Ok(())
 }

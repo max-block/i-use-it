@@ -1,10 +1,5 @@
 [[items]]
-description = "Rust is a multi-paradigm programming language focused on performance and safety, especially safe concurrency."
-link = "https://www.rust-lang.org/"
-name = "Rust"
-
-[[items]]
-description = "In-process task scheduler with Cron-like capabilities"
+description = "JavaScript, often abbreviated as JS, is a high-level, interpreted programming language."
 link = "https://en.wikipedia.org/wiki/JavaScript"
 name = "JavaScript"
 
@@ -12,6 +7,11 @@ name = "JavaScript"
 description = "Python is an interpreted, high-level and general-purpose programming language."
 link = "https://www.python.org/"
 name = "Python"
+
+[[items]]
+description = "Rust is a multi-paradigm programming language focused on performance and safety, especially safe concurrency."
+link = "https://www.rust-lang.org/"
+name = "Rust"
 
 [[items]]
 description = "Solidity is an object-oriented, high-level language for implementing smart contracts"

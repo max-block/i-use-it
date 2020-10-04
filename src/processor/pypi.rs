@@ -1,5 +1,6 @@
-use serde_json::Value;
 use std::{collections::BTreeMap, collections::HashMap, fs, sync::mpsc::channel};
+
+use serde_json::Value;
 use threadpool::ThreadPool;
 
 use crate::{error::AppError, Item};
@@ -7,7 +8,8 @@ use crate::{error::AppError, Item};
 const PYPI_LIST_FILE: &str = "data/pypi_list.txt";
 const PYPI_DESCRIPTION_FILE: &str = "data/pypi_description.toml";
 const PYPI_TOML_FILE: &str = "data/pypi.toml";
-const DESCRIPTION_WORKERS: usize = 5; // how match requests for description at once
+const DESCRIPTION_WORKERS: usize = 5;
+// how match requests for description at once
 const PYPI_API: &str = "https://pypi.org/pypi/${package}/json";
 
 pub fn process(link: &str) -> Result<Vec<Item>, AppError> {
@@ -36,12 +38,12 @@ fn process_descriptions(packages: Vec<String>) -> Result<(), AppError> {
     let mut descriptions: BTreeMap<String, String> =
         toml::from_str(fs::read_to_string(PYPI_DESCRIPTION_FILE)?.as_str())?;
 
-    let packages_without_desription: Vec<String> =
+    let packages_without_description: Vec<String> =
         packages.into_iter().filter(|x| !descriptions.contains_key(x)).collect();
 
     let pool = ThreadPool::new(DESCRIPTION_WORKERS);
     let (tx, rx) = channel();
-    for package in packages_without_desription {
+    for package in packages_without_description {
         let tx = tx.clone();
         pool.execute(move || {
             tx.send(get_package_description(package.to_string())).unwrap();

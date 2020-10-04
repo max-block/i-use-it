@@ -7,7 +7,8 @@ use std::fs;
 
 use serde_json::json;
 
-use crate::{error::AppError, Item};
+use crate::{error::AppError, Item, Items};
+use std::collections::HashMap;
 
 fn process_list_file(path: &str) -> Result<Vec<String>, AppError> {
     let data = fs::read_to_string(path)?;
@@ -29,10 +30,10 @@ fn process_list_file(path: &str) -> Result<Vec<String>, AppError> {
 pub fn process_simple_group(group: &str) -> Result<Vec<Item>, AppError> {
     let file = format!("data/{}.toml", group);
     dbg!(&file);
-    let items: Vec<Item> = toml::from_str(fs::read_to_string(&file)?.as_str())?;
+    let items: Items = toml::from_str(fs::read_to_string(&file)?.as_str())?;
     dbg!(&items);
 
-    let mut items: Vec<Item> = items.into_iter().filter(|x| !x.name.is_empty()).collect();
+    let mut items: Vec<Item> = items.items.into_iter().filter(|x| !x.name.is_empty()).collect();
     items.sort_by(|a, b| a.name.to_lowercase().cmp(&b.name.to_lowercase()));
 
     fs::write(&file, toml::to_string(&json!({ "items": &items }))?)?;
