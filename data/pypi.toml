@@ -1,0 +1,284 @@
+[[items]]
+name = "APScheduler"
+link = "https://pypi.org/pypi/APScheduler/"
+description = "In-process task scheduler with Cron-like capabilities"
+
+[[items]]
+name = "FastAPI"
+link = "https://pypi.org/pypi/FastAPI/"
+description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
+
+[[items]]
+name = "Flask"
+link = "https://pypi.org/pypi/Flask/"
+description = "A simple framework for building complex web applications."
+
+[[items]]
+name = "Flask-Login"
+link = "https://pypi.org/pypi/Flask-Login/"
+description = "User session management for Flask"
+
+[[items]]
+name = "Flask-WTF"
+link = "https://pypi.org/pypi/Flask-WTF/"
+description = "Simple integration of Flask and WTForms."
+
+[[items]]
+name = "Gunicorn"
+link = "https://pypi.org/pypi/Gunicorn/"
+description = "WSGI HTTP Server for UNIX"
+
+[[items]]
+name = "Jinja2"
+link = "https://pypi.org/pypi/Jinja2/"
+description = "A very fast and expressive template engine."
+
+[[items]]
+name = "PyMongo"
+link = "https://pypi.org/pypi/PyMongo/"
+description = "Python driver for MongoDB <http://www.mongodb.org>"
+
+[[items]]
+name = "PySnooper"
+link = "https://pypi.org/pypi/PySnooper/"
+description = "A poor man's debugger for Python."
+
+[[items]]
+name = "PySocks"
+link = "https://pypi.org/pypi/PySocks/"
+description = "A Python SOCKS client module. See https://github.com/Anorov/PySocks for more information."
+
+[[items]]
+name = "PyYAML"
+link = "https://pypi.org/pypi/PyYAML/"
+description = "YAML parser and emitter for Python"
+
+[[items]]
+name = "SQLAlchemy"
+link = "https://pypi.org/pypi/SQLAlchemy/"
+description = "Database Abstraction Library"
+
+[[items]]
+name = "SQLAlchemy-serializer"
+link = "https://pypi.org/pypi/SQLAlchemy-serializer/"
+description = "Mixin for SQLAlchemy-models serialization without pain"
+
+[[items]]
+name = "Typer"
+link = "https://pypi.org/pypi/Typer/"
+description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
+
+[[items]]
+name = "WTForms"
+link = "https://pypi.org/pypi/WTForms/"
+description = "A flexible forms validation and rendering library for Python web development."
+
+[[items]]
+name = "alembic"
+link = "https://pypi.org/pypi/alembic/"
+description = "A database migration tool for SQLAlchemy."
+
+[[items]]
+name = "autoflake"
+link = "https://pypi.org/pypi/autoflake/"
+description = "Removes unused imports and unused variables"
+
+[[items]]
+name = "bandit"
+link = "https://pypi.org/pypi/bandit/"
+description = "Security oriented static analyser for python code."
+
+[[items]]
+name = "beautifulsoup4"
+link = "https://pypi.org/pypi/beautifulsoup4/"
+description = "Screen-scraping library"
+
+[[items]]
+name = "black"
+link = "https://pypi.org/pypi/black/"
+description = "The uncompromising code formatter."
+
+[[items]]
+name = "click"
+link = "https://pypi.org/pypi/click/"
+description = "Composable command line interface toolkit"
+
+[[items]]
+name = "click-aliases"
+link = "https://pypi.org/pypi/click-aliases/"
+description = "Enable aliases for Click"
+
+[[items]]
+name = "cookiecutter"
+link = "https://pypi.org/pypi/cookiecutter/"
+description = "A command-line utility that creates projects from project templates, e.g. creating a Python package project from a Python package project template."
+
+[[items]]
+name = "dictdiffer"
+link = "https://pypi.org/pypi/dictdiffer/"
+description = "Dictdiffer is a library that helps you to diff and patch dictionaries."
+
+[[items]]
+name = "eth-event"
+link = "https://pypi.org/pypi/eth-event/"
+description = "Ethereum event decoder and topic generator"
+
+[[items]]
+name = "flake8"
+link = "https://pypi.org/pypi/flake8/"
+description = "the modular source code checker: pep8 pyflakes and co"
+
+[[items]]
+name = "flake8-bugbear"
+link = "https://pypi.org/pypi/flake8-bugbear/"
+description = "A plugin for flake8 finding likely bugs and design problems in your program. Contains warnings that don't belong in pyflakes and pycodestyle."
+
+[[items]]
+name = "flake8-builtins"
+link = "https://pypi.org/pypi/flake8-builtins/"
+description = "Check for python builtins being used as variables or parameters."
+
+[[items]]
+name = "flake8-commas"
+link = "https://pypi.org/pypi/flake8-commas/"
+description = "Flake8 lint for trailing commas."
+
+[[items]]
+name = "flake8-comprehensions"
+link = "https://pypi.org/pypi/flake8-comprehensions/"
+description = "A flake8 plugin to help you write better list/set/dict comprehensions."
+
+[[items]]
+name = "flake8-print"
+link = "https://pypi.org/pypi/flake8-print/"
+description = "print statement checker plugin for flake8"
+
+[[items]]
+name = "flake8-tidy-imports"
+link = "https://pypi.org/pypi/flake8-tidy-imports/"
+description = "A flake8 plugin that helps you write tidier imports."
+
+[[items]]
+name = "isort"
+link = "https://pypi.org/pypi/isort/"
+description = "A Python utility / library to sort Python imports."
+
+[[items]]
+name = "mypy"
+link = "https://pypi.org/pypi/mypy/"
+description = "Optional static typing for Python"
+
+[[items]]
+name = "pexpect"
+link = "https://pypi.org/pypi/pexpect/"
+description = "Pexpect allows easy control of interactive console applications."
+
+[[items]]
+name = "pre-commit"
+link = "https://pypi.org/pypi/pre-commit/"
+description = "A framework for managing and maintaining multi-language pre-commit hooks."
+
+[[items]]
+name = "prettyprinter"
+link = "https://pypi.org/pypi/prettyprinter/"
+description = "Syntax-highlighting, declarative and composable pretty printer for Python 3.5+"
+
+[[items]]
+name = "psutil"
+link = "https://pypi.org/pypi/psutil/"
+description = "Cross-platform lib for process and system monitoring in Python."
+
+[[items]]
+name = "psycopg2"
+link = "https://pypi.org/pypi/psycopg2/"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+
+[[items]]
+name = "pydantic"
+link = "https://pypi.org/pypi/pydantic/"
+description = "Data validation and settings management using python 3.6 type hinting"
+
+[[items]]
+name = "pydash"
+link = "https://pypi.org/pypi/pydash/"
+description = "The kitchen sink of Python utility libraries for doing \"stuff\" in a functional way. Based on the Lo-Dash Javascript library."
+
+[[items]]
+name = "pytest"
+link = "https://pypi.org/pypi/pytest/"
+description = "pytest: simple powerful testing with Python"
+
+[[items]]
+name = "pytest-mock"
+link = "https://pypi.org/pypi/pytest-mock/"
+description = "Thin-wrapper around the mock package for easier use with pytest"
+
+[[items]]
+name = "pytest-xdist"
+link = "https://pypi.org/pypi/pytest-xdist/"
+description = "pytest xdist plugin for distributed testing and loop-on-failing modes"
+
+[[items]]
+name = "python-dotenv"
+link = "https://pypi.org/pypi/python-dotenv/"
+description = "Add .env support to your django/flask apps in development and deployments"
+
+[[items]]
+name = "python-telegram-bot"
+link = "https://pypi.org/pypi/python-telegram-bot/"
+description = "We have made you a wrapper you can't refuse"
+
+[[items]]
+name = "requests"
+link = "https://pypi.org/pypi/requests/"
+description = "Python HTTP for Humans."
+
+[[items]]
+name = "selenium"
+link = "https://pypi.org/pypi/selenium/"
+description = "Python bindings for Selenium"
+
+[[items]]
+name = "setuptools"
+link = "https://pypi.org/pypi/setuptools/"
+description = "Easily download, build, install, upgrade, and uninstall Python packages"
+
+[[items]]
+name = "sorcery"
+link = "https://pypi.org/pypi/sorcery/"
+description = "Dark magic delights in Python"
+
+[[items]]
+name = "texttable"
+link = "https://pypi.org/pypi/texttable/"
+description = "module for creating simple ASCII tables"
+
+[[items]]
+name = "toml"
+link = "https://pypi.org/pypi/toml/"
+description = "Python Library for Tom's Obvious, Minimal Language"
+
+[[items]]
+name = "web3"
+link = "https://pypi.org/pypi/web3/"
+description = "Web3.py"
+
+[[items]]
+name = "websocket-client"
+link = "https://pypi.org/pypi/websocket-client/"
+description = "WebSocket client for Python. hybi13 is supported."
+
+[[items]]
+name = "websockets"
+link = "https://pypi.org/pypi/websockets/"
+description = "An implementation of the WebSocket Protocol (RFC 6455 & 7692)"
+
+[[items]]
+name = "wheel"
+link = "https://pypi.org/pypi/wheel/"
+description = "A built-package format for Python"
+
+[[items]]
+name = "wrapt"
+link = "https://pypi.org/pypi/wrapt/"
+description = "Module for decorators, wrappers and monkey patching."

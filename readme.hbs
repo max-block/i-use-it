@@ -3,6 +3,11 @@
 I record all things which I use as a programmer: services, software, and libraries. I do it for my programming
 buddies to more comfortable find topics for our Zoom conversations.
 
----
-{{#each data}} - [{{this.name}}]({{this.link}}) *#{{this.group}}* {{this.description}}
+{{#each group}}
+## {{this.title}}
+{{#each this.items}} - [{{this.name}}]({{this.link}}) *#{{this.group}}* {{this.description}}
 {{/each}}
+---
+{{/each}}
+
+

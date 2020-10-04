@@ -1,0 +1,11 @@
+groups = ["programming_language", "pypi"]
+
+[titles]
+programming_language = "Programming Languages"
+pypi = "Python Packages"
+crate = "Rust Crates"
+soft = "Software"
+service = "Services"
+
+[links]
+pypi = "https://pypi.org/pypi/${package}/"

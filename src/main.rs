@@ -1,3 +1,5 @@
 fn main() {
-    i_use_it::run();
+    if let Err(e) = i_use_it::run() {
+        println!("error: {:?}", e);
+    }
 }
