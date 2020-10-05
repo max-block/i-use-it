@@ -1,4 +1,9 @@
 [[items]]
+description = "Bash is the GNU Project's Bourne Again SHell, a complete implementation of the POSIX shell spec, but also with interactive command line editing, job control on architectures that support it, csh-like features such as history substitution and brace expansion, and a slew of other features."
+link = "https://github.com/bminor/bash"
+name = "Bash"
+
+[[items]]
 description = "JavaScript, often abbreviated as JS, is a high-level, interpreted programming language."
 link = "https://en.wikipedia.org/wiki/JavaScript"
 name = "JavaScript"

@@ -1,0 +1,14 @@
+[[items]]
+name = "Docker"
+link = "https://www.docker.com/"
+description = "Docker is an open platform for developing, shipping, and running applications"
+
+[[items]]
+name = "Ansible"
+link = "https://github.com/ansible/ansible"
+description = "Ansible is a radically simple IT automation system"
+
+[[items]]
+name = "Gitea"
+link = "https://github.com/go-gitea/gitea"
+description = "Git with a cup of tea, painless self-hosted git service"

@@ -4,10 +4,14 @@ I record all things which I use as a programmer: services, software, and librari
 buddies to more comfortable find topics for our Zoom conversations.
 
 {{#each groups}}
+- [{{this.title}}]({{anchor this.title}}){{/each}}
+
+
+{{#each groups}}
+---
 ## {{this.title}}
 {{#each this.items}} - [{{this.name}}]({{this.link}}) -  {{this.description}}
 {{/each}}
----
 {{/each}}
 
 

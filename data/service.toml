@@ -1,0 +1,19 @@
+[[items]]
+description = "The Rust community’s crate registry"
+link = "https://crates.io/"
+name = "crates.io"
+
+[[items]]
+description = "Docs.rs is an open source documentation host for crates of the Rust Programming Language."
+link = "https://docs.rs"
+name = "Docs.rs"
+
+[[items]]
+description = "It provides hosting for software development and version control using Git"
+link = "https://github.com/"
+name = "GitHub"
+
+[[items]]
+description = "libraties and apps rating"
+link = "https://libs.garden/"
+name = "libs.garden"

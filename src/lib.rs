@@ -1,7 +1,10 @@
+#[macro_use]
+extern crate handlebars;
+
 use std::collections::HashMap;
 use std::fs;
 
-use handlebars::Handlebars;
+use handlebars::{handlebars_helper, Handlebars};
 use serde::{Deserialize, Serialize};
 use serde_json::json;
 
@@ -45,28 +48,38 @@ impl Settings {
     }
 }
 
-pub fn run() -> Result<(), AppError> {
-    let settings = Settings::from_file("data/settings.toml")?;
-
+fn process_groups(settings: &Settings) -> Result<Vec<Group>, AppError> {
     let mut groups: Vec<Group> = vec![];
-    for group_name in settings.groups {
-        let title = settings.titles.get(&group_name).unwrap().to_owned();
+    for group_name in settings.groups.iter() {
+        let title = settings.titles.get(group_name).unwrap().to_owned();
         let items = match group_name.as_str() {
             "pypi" => pypi::process(settings.links.get("pypi").unwrap()),
             _ => processor::process_simple_group(&group_name),
         }?;
         groups.push(Group { title, items })
     }
+    Ok(groups)
+}
 
-    // let pypi_items = pypi::process(settings.links.get("pypi").unwrap());
-
-    let reg = Handlebars::new();
+fn update_readme(groups: Vec<Group>) -> Result<(), AppError> {
+    handlebars_helper!(anchor: |v: str| format!("#{}", v.to_lowercase().replace(" ", "-")));
+    let mut reg = Handlebars::new();
+    reg.register_helper("anchor", Box::new(anchor));
     let template = fs::read_to_string("readme.hbs").unwrap();
 
     let result = reg
         .render_template(template.as_str(), &json!({ "groups": groups }))
         .unwrap();
-    println!("{}", result);
 
+    println!("{}", result);
+    fs::write("README.md", result)?;
+    Ok(())
+}
+
+pub fn run() -> Result<(), AppError> {
+    let settings = Settings::from_file("data/settings.toml")?;
+    update_readme(process_groups(&settings)?)?;
+
+    println!("\n\ndone!");
     Ok(())
 }

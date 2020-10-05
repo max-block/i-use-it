@@ -8,7 +8,6 @@ use std::fs;
 use serde_json::json;
 
 use crate::{error::AppError, Item, Items};
-use std::collections::HashMap;
 
 fn process_list_file(path: &str) -> Result<Vec<String>, AppError> {
     let data = fs::read_to_string(path)?;

@@ -1,0 +1,54 @@
+[[items]]
+description = "aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink."
+link = "https://github.com/aria2/aria2"
+name = "aria2"
+
+[[items]]
+description = "Official Go implementation of the Ethereum protocol"
+link = "https://github.com/ethereum/go-ethereum"
+name = "geth"
+
+[[items]]
+description = "Git is a distributed version-control system for tracking changes in source code during software development"
+link = "https://git-scm.com/"
+name = "git"
+
+[[items]]
+description = "It's a terminal emulator for macOS"
+link = "https://iterm2.com/"
+name = "iTerm2"
+
+[[items]]
+description = "Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files."
+link = "https://www.gnu.org/software/make/"
+name = "Make"
+
+[[items]]
+description = "GNU Midnight Commander (also referred to as MC) is a user shell with text-mode full-screen interface."
+link = "https://github.com/MidnightCommander/mc"
+name = "Midnight Commander"
+
+[[items]]
+description = "Fast and feature-rich multi-network Ethereum client."
+link = "https://github.com/openethereum/openethereum"
+name = "OpenEthereum"
+
+[[items]]
+description = "The Python IDE"
+link = "https://www.jetbrains.com/pycharm/"
+name = "PyCharm"
+
+[[items]]
+description = "A collection of community-maintained help pages for command-line tools"
+link = "https://github.com/tldr-pages/tldr"
+name = "tldr"
+
+[[items]]
+description = "tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached."
+link = "https://github.com/tmux/tmux"
+name = "tmux"
+
+[[items]]
+description = "It's a lightweight but powerful source code editor"
+link = "https://code.visualstudio.com/"
+name = "Visual Studio Code"
