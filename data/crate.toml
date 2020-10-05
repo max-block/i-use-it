@@ -1,0 +1,74 @@
+[[items]]
+name = "cargo-expand"
+link = "https://crates.io/crates/cargo-expand"
+description = "Wrapper around rustc --pretty=expanded. Shows the result of macro expansion and #[derive] expansion."
+
+[[items]]
+name = "chrono"
+link = "https://crates.io/crates/chrono"
+description = "Date and time library for Rust"
+
+[[items]]
+name = "clap"
+link = "https://crates.io/crates/clap"
+description = "A simple to use, efficient, and full-featured Command Line Argument Parser"
+
+[[items]]
+name = "dotenv"
+link = "https://crates.io/crates/dotenv"
+description = "A `dotenv` implementation for Rust"
+
+[[items]]
+name = "handlebars"
+link = "https://crates.io/crates/handlebars"
+description = "Handlebars templating implemented in Rust."
+
+[[items]]
+name = "isahc"
+link = "https://crates.io/crates/isahc"
+description = "The practical HTTP client that is fun to use."
+
+[[items]]
+name = "mongodb"
+link = "https://crates.io/crates/mongodb"
+description = "The official MongoDB driver for Rust"
+
+[[items]]
+name = "rocket"
+link = "https://crates.io/crates/rocket"
+description = "Web framework for nightly with a focus on ease-of-use, expressibility, and speed."
+
+[[items]]
+name = "serde"
+link = "https://crates.io/crates/serde"
+description = "A generic serialization/deserialization framework"
+
+[[items]]
+name = "serde_json"
+link = "https://crates.io/crates/serde_json"
+description = "A JSON serialization file format"
+
+[[items]]
+name = "serde_yaml"
+link = "https://crates.io/crates/serde_yaml"
+description = "YAML support for Serde"
+
+[[items]]
+name = "telegram-bot"
+link = "https://crates.io/crates/telegram-bot"
+description = "A library for creating Telegram bots"
+
+[[items]]
+name = "threadpool"
+link = "https://crates.io/crates/threadpool"
+description = "A thread pool for running a number of jobs on a fixed set of worker threads."
+
+[[items]]
+name = "toml"
+link = "https://crates.io/crates/toml"
+description = "A native Rust encoder and decoder of TOML-formatted files and streams. Provides\nimplementations of the standard Serialize/Deserialize traits for TOML data to\nfacilitate deserializing and serializing Rust structures."
+
+[[items]]
+name = "url"
+link = "https://crates.io/crates/url"
+description = "URL library for Rust, based on the WHATWG URL Standard"

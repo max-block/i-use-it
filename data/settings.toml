@@ -1,4 +1,4 @@
-groups = ["programming_language", "database", "soft", "service", "pypi"]
+groups = ["programming_language", "database", "soft", "service", "pypi", "crate"]
 
 [titles]
 programming_language = "Programming Languages"
@@ -10,3 +10,4 @@ database = "Databases"
 
 [links]
 pypi = "https://pypi.org/pypi/${package}/"
+crate = "https://crates.io/crates/${package}"

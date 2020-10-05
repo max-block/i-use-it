@@ -1,11 +1,12 @@
+use crate::error::AppError;
+use crate::Item;
+use isahc::ResponseExt;
 use serde_json::Value;
 
-use crate::{error::AppError, Item};
-
-const LIST_FILE: &str = "data/pypi_list.txt";
-const DESCRIPTION_FILE: &str = "data/pypi_description.toml";
-const GROUP_FILE: &str = "data/pypi.toml";
-const API_URL: &str = "https://pypi.org/pypi/${package}/json";
+const API_URL: &str = "https://crates.io/api/v1/crates/${package}";
+const LIST_FILE: &str = "data/crate_list.txt";
+const DESCRIPTION_FILE: &str = "data/crate_description.toml";
+const GROUP_FILE: &str = "data/crate.toml";
 
 pub fn process(link: &str) -> Result<Vec<Item>, AppError> {
     let packages = super::process_list_file(LIST_FILE)?;
@@ -15,12 +16,14 @@ pub fn process(link: &str) -> Result<Vec<Item>, AppError> {
 
 pub fn get_package_description(package: String) -> Result<(String, String), AppError> {
     let url = API_URL.replace("${package}", &package);
-    let res = reqwest::blocking::get(&url)?.json::<Value>()?;
+    let mut res = isahc::get(url)?;
+    let res: Value = serde_json::from_str(res.text()?.as_str())?;
     let description = res
-        .pointer("/info/summary")
+        .pointer("/crate/description")
         .ok_or(AppError::PyPISummaryError)?
         .as_str()
-        .ok_or(AppError::PyPISummaryError)?;
+        .ok_or(AppError::PyPISummaryError)?
+        .trim().replace("\\n", "");
     Ok((package, description.to_string()))
 }
 
@@ -30,8 +33,8 @@ mod test {
 
     #[test]
     fn test_get_package_description() {
-        let res = get_package_description("Flask".to_string());
-        assert!(res.unwrap().1.contains("simple framework"));
+        let res = get_package_description("url".to_string());
+        dbg!(&res);
+        assert!(res.unwrap().1.contains("library for Rust"));
     }
-
 }

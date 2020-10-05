@@ -1,6 +1,3 @@
-#[macro_use]
-extern crate handlebars;
-
 use std::collections::HashMap;
 use std::fs;
 
@@ -9,7 +6,7 @@ use serde::{Deserialize, Serialize};
 use serde_json::json;
 
 use error::AppError;
-use processor::pypi;
+use processor::{crates, pypi};
 
 mod error;
 
@@ -54,6 +51,7 @@ fn process_groups(settings: &Settings) -> Result<Vec<Group>, AppError> {
         let title = settings.titles.get(group_name).unwrap().to_owned();
         let items = match group_name.as_str() {
             "pypi" => pypi::process(settings.links.get("pypi").unwrap()),
+            "crate" => crates::process(settings.links.get("crate").unwrap()),
             _ => processor::process_simple_group(&group_name),
         }?;
         groups.push(Group { title, items })

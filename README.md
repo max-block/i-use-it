@@ -9,6 +9,7 @@ buddies to more comfortable find topics for our Zoom conversations.
 - [Software](#software)
 - [Services](#services)
 - [Python Packages](#python-packages)
+- [Rust Crates](#rust-crates)
 
 
 
@@ -109,6 +110,27 @@ buddies to more comfortable find topics for our Zoom conversations.
  - [websockets](https://pypi.org/pypi/websockets/) -  An implementation of the WebSocket Protocol (RFC 6455 &amp; 7692)
  - [wheel](https://pypi.org/pypi/wheel/) -  A built-package format for Python
  - [wrapt](https://pypi.org/pypi/wrapt/) -  Module for decorators, wrappers and monkey patching.
+
+
+---
+## Rust Crates
+ - [cargo-expand](https://crates.io/crates/cargo-expand) -  Wrapper around rustc --pretty&#x3D;expanded. Shows the result of macro expansion and #[derive] expansion.
+ - [chrono](https://crates.io/crates/chrono) -  Date and time library for Rust
+ - [clap](https://crates.io/crates/clap) -  A simple to use, efficient, and full-featured Command Line Argument Parser
+ - [dotenv](https://crates.io/crates/dotenv) -  A &#x60;dotenv&#x60; implementation for Rust
+ - [handlebars](https://crates.io/crates/handlebars) -  Handlebars templating implemented in Rust.
+ - [isahc](https://crates.io/crates/isahc) -  The practical HTTP client that is fun to use.
+ - [mongodb](https://crates.io/crates/mongodb) -  The official MongoDB driver for Rust
+ - [rocket](https://crates.io/crates/rocket) -  Web framework for nightly with a focus on ease-of-use, expressibility, and speed.
+ - [serde](https://crates.io/crates/serde) -  A generic serialization/deserialization framework
+ - [serde_json](https://crates.io/crates/serde_json) -  A JSON serialization file format
+ - [serde_yaml](https://crates.io/crates/serde_yaml) -  YAML support for Serde
+ - [telegram-bot](https://crates.io/crates/telegram-bot) -  A library for creating Telegram bots
+ - [threadpool](https://crates.io/crates/threadpool) -  A thread pool for running a number of jobs on a fixed set of worker threads.
+ - [toml](https://crates.io/crates/toml) -  A native Rust encoder and decoder of TOML-formatted files and streams. Provides
+implementations of the standard Serialize/Deserialize traits for TOML data to
+facilitate deserializing and serializing Rust structures.
+ - [url](https://crates.io/crates/url) -  URL library for Rust, based on the WHATWG URL Standard
 
 
 

@@ -3,9 +3,13 @@ chrono
 clap
 dotenv
 handlebars
+isahc
 mongodb
 rocket
 serde
+serde_json
+serde_yaml
 telegram-bot
+threadpool
 toml
 url
